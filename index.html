@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link rel="stylesheet" href="style.css">
+<link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
+</i><title>Calculator</title>
+<script src="app.js"></script>
+</head>
+<body>
+<!--Heading and description-->
+<h1><i class="fas fa-calculator"></i>  Calculator  <i class="fas fa-calculator"></i></h1>
+<p style="color: white;">Enter two numbers and choose what operation to perform on them.</p>
+
+<!--Input form-->
+<form>
+    <!--Input A-->
+    <label for="numberA">First number</label><br>
+    <input type="text" id="numberA" name="numberA"><br>
+
+    <!--Input B-->
+    <label for="numberB">Second number</label><br>
+    <input type="text" id="numberB" name="numberB"><br><br>
+
+<!--buttons-->
+    <!--Addition-->
+    <button type="button" class="btn btn-outline-primary" onclick="add()">Add</button>
+    <!--Subtraction-->
+    <button type="button" class="btn btn-outline-warning" onclick="subtract()">Subtract</button>
+    <!--Multiplication-->
+    <button type="button" class="btn btn-outline-danger" onclick="multiply()">Multiply</button><br>
+    <!--Division with remainder-->
+    <button type="button" class="btn btn-outline-success" onclick="divideRemainder()">Divide (Remainder)</button>
+    <!--Division with a decimal point-->
+    <button type="button" class="btn btn-outline-info" onclick="divideFloat()">Divide (Decimal)</button>
+</form>
+
+<!--Table of answers-->
+<table id="myTable"></table>
+</body>
+</html>
